@@ -150,4 +150,27 @@ document.addEventListener('DOMContentLoaded', () => {
             moveToSlide(currentIndex + 1);
         }, 5000); // changes every 5 seconds
     }
+
+    // 6. Contact Form WhatsApp Integration
+    const appointmentForm = document.getElementById('appointmentForm');
+    if (appointmentForm) {
+        appointmentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const reason = document.getElementById('reason').value;
+            
+            // Construct message
+            const message = `Hello Dr. Bista! I would like to request an appointment.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Preferred Date:* ${date}%0A*Reason:* ${reason}`;
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/919749932413?text=${message}`, '_blank');
+            
+            // Optional: reset form
+            appointmentForm.reset();
+        });
+    }
 });

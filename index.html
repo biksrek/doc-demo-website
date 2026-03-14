@@ -22,7 +22,7 @@
                     <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span>Dr. <strong>Bista</strong></span>
+                <span>Dr. <strong> Diwaker Bista</strong></span>
             </a>
             
             <ul class="nav-links">
@@ -167,8 +167,8 @@
         <div class="container about-container">
             <div class="about-image reveal-left">
                 <div class="image-grid">
-                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop" alt="Clinic Interior" class="img-1">
-                    <img src="https://images.unsplash.com/photo-1551076805-e18690c5e561?q=80&w=1000&auto=format&fit=crop" alt="Medical Equipment" class="img-2">
+                    <img src="ent_clinic_interior.png" alt="ENT Clinic Interior" class="img-1">
+                    <img src="ent_medical_equipment.png" alt="ENT Medical Equipment" class="img-2">
                 </div>
             </div>
             <div class="about-content reveal">
@@ -320,26 +320,26 @@
                 </div>
                 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Appointment request sent!');">
+                    <form class="contact-form" id="appointmentForm">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="(555) 000-0000" required>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
                         </div>
                         <div class="form-group">
                             <label for="date">Preferred Date</label>
-                            <input type="date" id="date" required>
+                            <input type="date" id="date" name="date" required>
                         </div>
                         <div class="form-group">
                             <label for="reason">Reason for Visit</label>
-                            <select id="reason" required>
+                            <select id="reason" name="reason" required>
                                 <option value="" disabled selected>Select a reason...</option>
                                 <option value="checkup">General Checkup</option>
                                 <option value="illness">Illness or Injury</option>
