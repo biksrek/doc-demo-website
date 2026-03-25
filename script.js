@@ -164,10 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const reason = document.getElementById('reason').value;
             
             // Construct message
-            const message = `Hello Dr. Bista! I would like to request an appointment.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Preferred Date:* ${date}%0A*Reason:* ${reason}`;
+            const message = `Hello Dr. Rajesh Sharma! I would like to request an appointment.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Preferred Date:* ${date}%0A*Reason:* ${reason}`;
             
             // Open WhatsApp
-            window.open(`https://wa.me/919749932413?text=${message}`, '_blank');
+            window.open(`https://wa.me/919609631054?text=${message}`, '_blank');
             
             // Optional: reset form
             appointmentForm.reset();
