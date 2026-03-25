@@ -779,7 +779,20 @@ h1 span, h2 span {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+.map-container {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-container iframe {
+    display: block;
 }
 
 .info-item {
